@@ -1,0 +1,22 @@
+<script>
+    var basket_price = 0;
+    var shelf = [{
+        name: 1,
+        price: 1
+    }, {
+        name: 2,
+        price: 2
+    }, {
+        name: 3,
+        price: 3
+    }];
+    var basket = [];
+    do {
+        basket.push(shelf[prompt("Введите номер товара:")-1]);
+    } while (basket.length <= 3);
+    for (i = 0; i < basket.length; i++) {
+        basket_price = basket_price + basket[i].price;
+    }
+    console.log(basket_price);
+
+</script>
